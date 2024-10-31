@@ -1,9 +1,9 @@
 import './App.css';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/home/HomePage';
 
 function App() {
   return (
-    <div className="App font-opensans">
+    <div className="App font-opensans bg-secondary">
       <HomePage />
     </div>
   );

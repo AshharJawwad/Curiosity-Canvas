@@ -18,7 +18,7 @@ const NavItem = ({ item }) => {
           <a href="/" className="px-4 py-2">
             {item.name}
           </a>
-          <span className="text-purple-500 absolute transition-all duration-500 font-bold right-0 top-0 group-hover:right-[90%] opacity-0 group-hover:opacity-100">
+          <span className="cursor-pointer text-purple-500 absolute transition-all duration-500 font-bold right-0 top-0 group-hover:right-[90%] opacity-0 group-hover:opacity-100">
             /
           </span>
         </>
@@ -39,10 +39,10 @@ const NavBar = () => {
   };
 
   return (
-    <section>
+    <section className="sticky top-0 left-0 right-0 z-50 bg-secondary h-[56px]">
       <header className="container mx-auto px-5 flex justify-between py-4 items-center">
         <div>
-          <img className="w-24 lg:w-auto" src={images.Logo} alt="logo" />
+          <img className="w-32 lg:w-auto" src={images.Logo} alt="logo" />
         </div>
         <div className="lg:hidden z-50">
           {navIsVisible ? (
